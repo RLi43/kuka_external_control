@@ -263,6 +263,16 @@ class ExternalController:
         self.app_start(stop=True)
         self.app_start()
 
+    def resume(self):
+        """
+        The application was paused.
+        Send two rising edges to first enable repositioning and then enable resuming.
+        """
+        self.app_restart()
+        # TODO: wait until repositioning is finished
+        self.app_restart()
+
+
 if __name__ == '__main__':
     kuka = ExternalController(initial_packet_seq=1, verbose=True)
     if kuka.local_ip_check():

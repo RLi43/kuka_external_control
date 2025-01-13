@@ -1,16 +1,11 @@
 
 0. Types
-    a. DoF
-        - 'X', 'Y', 'Z'
-        - 'T' for Translational
-        - 'A', 'B', 'C'
-        - 'R' for rotational
-        - 'N' for null space
-        - 'E' for all DoFs
-    b.
-        - 'Q' for not applied
-    c. movement
-        - 'V' for velocity (cartesian velocity)
+    - 'X', 'Y', 'Z'
+    - 'T' for Translational
+    - 'A', 'B', 'C'
+    - 'R' for rotational
+    - 'N' for null space
+    - 'E' for all DoFs
 1. Controller Parameters
     a. Position Control
         No parameters
@@ -18,6 +13,7 @@
         - Parameters
             - Damping
             - Stiffness
+            - AdditionalControlForce
         - Safety Guards (Motion is aborted if violated) [Not Planned]
             - max cartesian velocity
             - max path deviation
@@ -27,6 +23,9 @@
         - Damping
         - Stiffness
 2. Motion Parameters
+
+    > Not available for PositionHold?
+
     a. Cartesian Velocity (mm/s) (not applied to joint overlay)
         - T1: 250 mm/s
     b. JointVelocityRel (%)
