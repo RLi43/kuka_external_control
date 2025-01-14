@@ -7,6 +7,10 @@
     - 'N' for null space
     - 'E' for all DoFs
 1. Controller Parameters
+    z. Controller Type
+        - Position Control
+        - Axis-specific Impedance Controller
+        - Cartesian Impedance Controller
     a. Position Control
         No parameters
     b. Cartesian Impedance Controller
